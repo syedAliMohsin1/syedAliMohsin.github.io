@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Ali Mohsin - Computer Science Educator & Consultant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-color: #111827;
+            background-image: linear-gradient(145deg, #111827 0%, #374151 100%);
+        }
+        .section-title {
+            border-bottom: 3px solid #3b82f6;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+        .service-card, .portfolio-card, .experience-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover, .portfolio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Syed Ali Mohsin</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-600">Services</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-blue-600">Portfolio</a>
+                <a href="#experience" class="text-gray-600 hover:text-blue-600">Experience</a>
+                <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-full cta-button hover:bg-blue-700">Contact Me</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-200">About</a>
+            <a href="#services" class="block py-2 px-4 text-sm hover:bg-gray-200">Services</a>
+            <a href="#portfolio" class="block py-2 px-4 text-sm hover:bg-gray-200">Portfolio</a>
+            <a href="#experience" class="block py-2 px-4 text-sm hover:bg-gray-200">Experience</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Syed Ali Mohsin</h1>
+                <p class="text-lg md:text-2xl text-gray-300 mb-8">Expert Computer Science Educator & Project Consultant</p>
+                <p class="max-w-3xl mx-auto text-gray-400 mb-12">
+                    With over a decade of experience in academia, I specialize in making complex computer science concepts accessible and supervising impactful final-year projects.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#portfolio" class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold cta-button hover:bg-blue-700 text-lg">View My Work</a>
+                    <a href="https://wa.me/923145754371" target="_blank" class="bg-gray-700 text-white px-8 py-3 rounded-full font-semibold cta-button hover:bg-gray-600 text-lg">
+                        <i class="fab fa-whatsapp mr-2"></i>Contact on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold section-title">About Me</h2>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3 text-center">
+                        <img src="https://placehold.co/400x400/3b82f6/ffffff?text=SAM" alt="Syed Ali Mohsin" class="rounded-full shadow-lg mx-auto w-64 h-64 md:w-80 md:h-80 object-cover">
+                    </div>
+                    <div class="md:w-2/3">
+                        <p class="text-lg text-gray-700 mb-4">
+                            I am a passionate and highly experienced Computer Science Lecturer with a proven track record of fostering student success. My 10+ years in teaching have equipped me with deep expertise in curriculum development, effective assessment strategies, and dedicated student mentorship.
+                        </p>
+                        <p class="text-lg text-gray-700 mb-6">
+                            My goal is to create a positive and dynamic learning environment where students can thrive. I am committed to helping the next generation of computer scientists achieve their full potential. I am excited to leverage my skills to contribute to innovative projects and educational initiatives.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="https://www.linkedin.com/in/syed-ali-mohsin-1b099734/" target="_blank" class="text-gray-600 hover:text-blue-600"><i class="fab fa-linkedin fa-2x"></i></a>
+                            <a href="mailto:alimohsin40@hotmail.com" class="text-gray-600 hover:text-blue-600"><i class="fas fa-envelope fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold section-title">Professional Services</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="service-card bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="text-blue-600 mb-4"><i class="fas fa-book-open fa-3x"></i></div>
+                        <h3 class="text-2xl font-bold mb-3">Curriculum Development</h3>
+                        <p class="text-gray-600">Designing and refining computer science curricula for universities and colleges to meet modern industry standards.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="service-card bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="text-blue-600 mb-4"><i class="fas fa-chalkboard-teacher fa-3x"></i></div>
+                        <h3 class="text-2xl font-bold mb-3">Private Tutoring & Mentorship</h3>
+                        <p class="text-gray-600">Offering one-on-one and group tutoring for subjects like Python, Java, Data Structures, and Visual Programming.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="service-card bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="text-blue-600 mb-4"><i class="fas fa-project-diagram fa-3x"></i></div>
+                        <h3 class="text-2xl font-bold mb-3">Final Year Project Supervision</h3>
+                        <p class="text-gray-600">Guiding students through the entire lifecycle of their final year projects, from ideation to implementation and defense.</p>
+                    </div>
+                     <!-- Service Card 4 -->
+                    <div class="service-card bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="text-blue-600 mb-4"><i class="fas fa-laptop-code fa-3x"></i></div>
+                        <h3 class="text-2xl font-bold mb-3">Corporate Training</h3>
+                        <p class="text-gray-600">Delivering workshops and training sessions for companies on topics like E-commerce technologies and fundamental programming.</p>
+                    </div>
+                     <!-- Service Card 5 -->
+                    <div class="service-card bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="text-blue-600 mb-4"><i class="fas fa-file-alt fa-3x"></i></div>
+                        <h3 class="text-2xl font-bold mb-3">Technical Content Creation</h3>
+                        <p class="text-gray-600">Developing high-quality technical content, including course materials, lab manuals, and educational articles.</p>
+                    </div>
+                     <!-- Service Card 6 -->
+                    <div class="service-card bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="text-blue-600 mb-4"><i class="fas fa-cogs fa-3x"></i></div>
+                        <h3 class="text-2xl font-bold mb-3">Academic Consultation</h3>
+                        <p class="text-gray-600">Providing expert advice to educational institutions on program structure, assessment methods, and accreditation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold section-title">Supervised Projects Portfolio</h2>
+                    <p class="text-lg text-gray-600 mt-4">A selection of final year projects I have supervised, showcasing student innovation and practical application of CS principles.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Portfolio Card 1 -->
+                    <div class="portfolio-card bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://placehold.co/600x400/a5b4fc/1e293b?text=E-commerce+Platform" alt="Project 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Advanced E-commerce Platform</h3>
+                            <p class="text-gray-700 mb-4">A full-featured online shopping website with a custom recommendation engine and secure payment gateway integration.</p>
+                            <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-2 py-1 rounded">Web Development</span>
+                        </div>
+                    </div>
+                    <!-- Portfolio Card 2 -->
+                    <div class="portfolio-card bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://placehold.co/600x400/93c5fd/1e293b?text=Data+Visualization+Tool" alt="Project 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Interactive Data Visualization Tool</h3>
+                            <p class="text-gray-700 mb-4">A desktop application built with Java for visualizing complex datasets, helping users to uncover insights through charts and graphs.</p>
+                            <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-2 py-1 rounded">Data Science</span>
+                        </div>
+                    </div>
+                    <!-- Portfolio Card 3 -->
+                    <div class="portfolio-card bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://placehold.co/600x400/60a5fa/1e293b?text=Student+Info+System" alt="Project 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">University Information System</h3>
+                            <p class="text-gray-700 mb-4">A comprehensive system for managing student records, course registration, and grading, built using Visual Programming techniques.</p>
+                            <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-2 py-1 rounded">Software Engineering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Experience Section -->
+        <section id="experience" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold section-title">Professional Experience</h2>
+                </div>
+                <div class="relative">
+                    <!-- Vertical Line -->
+                    <div class="absolute left-1/2 -ml-0.5 w-1 bg-gray-300 h-full hidden md:block"></div>
+                    
+                    <!-- Experience Item 1 -->
+                    <div class="mb-12 flex justify-between items-center w-full flex-wrap md:flex-nowrap">
+                        <div class="md:w-5/12 order-1 md:order-none"></div>
+                        <div class="z-10 flex items-center justify-center w-12 h-12 bg-blue-600 rounded-full shadow-lg order-2 md:order-none">
+                            <i class="fas fa-briefcase text-white"></i>
+                        </div>
+                        <div class="experience-item bg-white p-6 rounded-lg shadow-lg md:w-5/12 order-3 md:order-none">
+                            <p class="text-blue-600 font-semibold mb-1">Oct 2021 - Feb 2023</p>
+                            <h3 class="text-xl font-bold mb-2">Visiting Faculty</h3>
+                            <p class="text-gray-600 font-medium">Rawalpindi Women University</p>
+                            <p class="text-gray-700 mt-2">Taught Data Structures, Visual Programming, and Information Systems. Coordinated class activities and provided practical programming guidance.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience Item 2 -->
+                     <div class="mb-12 flex justify-between items-center w-full flex-wrap md:flex-nowrap md:flex-row-reverse">
+                        <div class="md:w-5/12 order-1 md:order-none"></div>
+                        <div class="z-10 flex items-center justify-center w-12 h-12 bg-blue-600 rounded-full shadow-lg order-2 md:order-none">
+                             <i class="fas fa-briefcase text-white"></i>
+                        </div>
+                        <div class="experience-item bg-white p-6 rounded-lg shadow-lg md:w-5/12 order-3 md:order-none">
+                            <p class="text-blue-600 font-semibold mb-1">Sep 2019 - Aug 2020</p>
+                            <h3 class="text-xl font-bold mb-2">Visiting Faculty</h3>
+                            <p class="text-gray-600 font-medium">COMSATS University Islamabad</p>
+                            <p class="text-gray-700 mt-2">Designed and delivered courses in Python and E-commerce. Mentored students on real-world computer projects.</p>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 3 -->
+                    <div class="mb-12 flex justify-between items-center w-full flex-wrap md:flex-nowrap">
+                        <div class="md:w-5/12 order-1 md:order-none"></div>
+                        <div class="z-10 flex items-center justify-center w-12 h-12 bg-blue-600 rounded-full shadow-lg order-2 md:order-none">
+                             <i class="fas fa-briefcase text-white"></i>
+                        </div>
+                        <div class="experience-item bg-white p-6 rounded-lg shadow-lg md:w-5/12 order-3 md:order-none">
+                            <p class="text-blue-600 font-semibold mb-1">Nov 2003 - Jun 2013</p>
+                            <h3 class="text-xl font-bold mb-2">Computer Lecturer</h3>
+                            <p class="text-gray-600 font-medium">COMSATS University Islamabad</p>
+                            <p class="text-gray-700 mt-2">Delivered engaging lessons across computer science courses. Developed curriculum, assessed student performance, and supervised numerous final year degree projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-800 text-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold section-title border-blue-500">Get In Touch</h2>
+                    <p class="text-lg text-gray-300 mt-4">Have a project in mind or need an expert consultation? Let's talk.</p>
+                </div>
+                <div class="max-w-3xl mx-auto bg-gray-900 p-8 rounded-lg shadow-lg">
+                    <div class="flex flex-col md:flex-row justify-around items-center text-center">
+                        <div class="mb-6 md:mb-0">
+                            <i class="fas fa-envelope fa-2x text-blue-500 mb-3"></i>
+                            <h4 class="text-xl font-semibold">Email</h4>
+                            <a href="mailto:alimohsin40@hotmail.com" class="text-gray-300 hover:text-blue-400">alimohsin40@hotmail.com</a>
+                        </div>
+                        <div class="mb-6 md:mb-0">
+                            <i class="fab fa-whatsapp fa-2x text-blue-500 mb-3"></i>
+                            <h4 class="text-xl font-semibold">WhatsApp</h4>
+                            <a href="https://wa.me/923145754371" target="_blank" class="text-gray-300 hover:text-blue-400">+92 314 5754371</a>
+                        </div>
+                        <div>
+                            <i class="fab fa-linkedin fa-2x text-blue-500 mb-3"></i>
+                            <h4 class="text-xl font-semibold">LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/syed-ali-mohsin-1b099734/" target="_blank" class="text-gray-300 hover:text-blue-400">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Syed Ali Mohsin. All Rights Reserved.</p>
+            <p class="text-sm text-gray-500 mt-2">Website designed by SAM </p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                mobileMenu.classList.add('hidden'); // Close mobile menu on click
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
